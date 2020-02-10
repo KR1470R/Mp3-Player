@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+   <head>
+     <title>Testing</title>
+     <meta charset="utf-8">
+     <link rel="stylesheet" type="text/css" href="style.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed&display=swap" rel="stylesheet">
+          
+
+   </head>
+      
+    <body onload="loading()">
+       
+       <div class="all">
+        
+        
+         <div class="header"> 
+        <div class="headerImageCon"><!--Картинка-->
+          <!--<img src="https://i.pinimg.com/originals/e5/ea/fc/e5eafc0a6bbcac89f7879e72723c269f.gif" alt="gif" width="400px" class="bg"/>-->
+        </div>
+        </div>
+
+        <img  src="https://i.pinimg.com/originals/c7/91/d0/c791d03bc3cf17d3ddaa5d8b9fac95f1.png" class="back" alt="" onclick="back()" width="40px"/>
+        
+        
+        <div class="body">
+            <div class="info">
+              <span class="nameOfSong">Acid rain</span><br/><span class="author">Lorn</span>
+             
+            </div>
+            </div>
+
+            
+            <div class="container">
+                 <div class="timeN">0:00</div><div class="timeA">0:00</div>
+          <audio src="https://www.mboxdrive.com/y2mate.com - lorn_acid_rain_official_music_video_nxg4C365LbQ_320kbps.mp3" id="audio" preload="metadata"></audio>
+
+
+        
+          <div class="contr">
+            <progress id="progress" max="100" value="0" style="width: 100%; margin: 0 auto;"></progress>
+          </div>
+
+          <div class="buttons">
+             <button id="speed-down" onclick="speedDown()"><img src="img/back.svg" alt="" width="25px" class="next"/></button>
+         
+            <button id="play" onclick="play()"><img src="https://i.pinimg.com/originals/9b/b0/4d/9bb04dd57ddab84c36d9fc943213fb1a.png" width="28px" class="playImage"/></button>
+         
+            <button id="speed-up" onclick="speedUp()"><img src="img/next.svg" alt="" width="25px" class="prev"/></button>
+          </div>
+            
+            
+          <!--<div class="volumeDiv">
+            <div class="control">
+             <img src="https://i.pinimg.com/originals/ce/3c/47/ce3c4723ea60cc4a7d25fbddbb71b485.png" alt="" class="volumeImage" width="18px"/>
+                  <input type="range" id="volume" min=0 max=100 />
+           </div>-->
+          </div>
+          </div>
+        
+         
+       </div>
+       </div>
+     </div>
+ </div>
+
+<!--Категории-->
+      
+     <div class="load2" style="display: block;">
+         
+         <div class="coding" onclick="coding()"><span class="textC">Сateg1</span></div>
+
+         <div class="edm" onclick="edm()"><span class="textC">Categ2</span></div>
+
+         <div class="edm categ02" onclick="edm02()"><span class="textC">Categ3</span></div>
+     
+
+
+     </div>
+     
+<!--Прелоадер-->
+
+     <div class="load">
+     <div class="cssload-container">
+<div class="cssload-speeding-wheel"></div>
+<div class="textL">Loading...</div>
+</div>
+ </div>
+
+
+       
+      
+      <script src="script.js"></script>
+   </body>
+</html>
